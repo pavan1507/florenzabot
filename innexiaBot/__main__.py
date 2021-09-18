@@ -75,36 +75,36 @@ def get_readable_time(seconds: int) -> str:
 INNEXIA_IMG = "https://telegra.ph/file/8b6f8f2bb4ff3912634c7.jpg"
 
 PM_START_TEXT = """
-`Heya` 🤗 `I am` **FLORENZA** ` super bot`
-`I am very fast and  more efficient  I provide awesome  features which a owner will look for  filter ,warn system,note keeping system flood!`
+`ʜᴇʟʟᴏ` 🤗 `ɪ ᴀᴍ` [ꜰʟᴏʀᴇɴᴢᴀ](https://telegra.ph/file/6b93ac5767c28ad29a130.jpg) ` ᴘᴏᴡᴇʀꜰᴜʟʟ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ`
+`ɪ ᴀᴍ ᴠᴇʀʏ ꜰᴀꜱᴛ ᴀɴᴅ  ᴍᴏʀᴇ ᴇꜰꜰɪᴄɪᴇɴᴛ  ɪ ᴘʀᴏᴠɪᴅᴇ ᴀᴡᴇꜱᴏᴍᴇ  ꜰᴇᴀᴛᴜʀᴇꜱ ᴡʜɪᴄʜ ᴀ ᴏᴡɴᴇʀ ᴡɪʟʟ ʟᴏᴏᴋ ꜰᴏʀ  ꜰɪʟᴛᴇʀ ,ᴡᴀʀɴ ꜱʏꜱᴛᴇᴍ,ꜱᴀᴠᴇ ɴᴏᴛᴇꜱ, ꜰʟᴏᴏᴅ, ʙᴀɴ ᴀɴᴅ ᴍᴏʀᴇ!`
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="❔Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅꜱ ❔", callback_data="help_back"),
+            text="💕 ᴀᴅᴅ ꜰʟᴏʀᴇɴᴢᴀ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ", url="http://t.me/Florenza_bot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="🔥 Sᴏᴜʀᴄᴇ", url=f"https://github.com/T5FR0CK5T4R/florenzabot"),
+        InlineKeyboardButton(text="🔥ᴅᴇᴠꜱ", url=f"https://t.me/Panuu_Dev"),
         InlineKeyboardButton(
-            text="Vᴄ Pʟᴀʏᴇʀ 🎶", url=f"https://telegra.ph/s-09-13-3"
+            text="ᴠᴄ ᴘʟᴀʏᴇʀ", url=f"https://telegra.ph/Panuu-09-18"
         ),
     ],
     [
-        InlineKeyboardButton(text="📜 Aʙᴏᴜᴛ", callback_data="innexia_"),
+        InlineKeyboardButton(text="⚡ ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/creatorpavansyt"),
         InlineKeyboardButton(
-            text="Bᴀꜱɪᴄ Hᴇʟᴘ 👮", callback_data="innexia_basichelp"
+            text="ᴜᴘᴅᴀᴛᴇꜱ 📢", url=f"https://t.me/creatorpavan"
         ),
     ],
     [
-        InlineKeyboardButton(text="💕 Sᴜᴍᴍᴏɴ Mᴇ 💕", url="http://t.me/Florenza_bot?startgroup=true"),
+        InlineKeyboardButton(text="Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅꜱ ", callback_data="help_back"),
     ],
 ]
 
 
 HELP_STRINGS = """
-**SETTINGS**
-`Click on the buttons below to get documentation about specific modules..`)"""
+**ꜱᴇᴛᴛɪɴɢꜱ**
+`ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ`"""
 
 
 
@@ -223,7 +223,7 @@ def start(update: Update, context: CallbackContext):
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="t.me/Florenza_support")]]
+                [[InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="t.me/creatorpavansyt")]]
             ),
         )
         
@@ -355,8 +355,8 @@ def innexia_about_callback(update, context):
     query = update.callback_query
     if query.data == "innexia_":
         query.message.edit_text(
-            text=""" 𝐅𝐥𝐨𝐫𝐞𝐧𝐳𝐚 - A bot to manage your groups with additional features!
-            \nHere's the basic help regarding use of Florenza.
+            text=""" 𝐏𝐀𝐍𝐔𝐔 - A bot to manage your groups with additional features!
+            \nHere's the basic help regarding use of Panuu.
             
             \nAlmost all modules usage defined in the help menu, checkout by sending `/help`
             \nReport error/bugs click the Button""",
@@ -366,10 +366,10 @@ def innexia_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Bᴜɢ'ꜱ", url="t.me/Florenza_support"
+                            text="Bᴜɢ'ꜱ", url="t.me/creatorpavansyt"
                         ),
                         InlineKeyboardButton(
-                            text="Bᴏᴛ Lɪꜱᴛ", url="t.me/Florenza_updates"
+                            text="Bᴏᴛ Lɪꜱᴛ", url="t.me/creatorpavan"
                         ),
                     ],
                     [InlineKeyboardButton(text="Back", callback_data="innexia_back")],
@@ -398,12 +398,12 @@ def innexia_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Aᴅᴍɪɴ", callback_data="florenza_admin"),
-                    InlineKeyboardButton(text="Nᴏᴛᴇꜱ", callback_data="florenza_notes"),
+                    InlineKeyboardButton(text="Aᴅᴍɪɴ", callback_data="creatorpavan"),
+                    InlineKeyboardButton(text="Nᴏᴛᴇꜱ", callback_data="creatorpavan"),
                  ],
                  [
-                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", callback_data="florenza_support"),
-                    InlineKeyboardButton(text="Credit", callback_data="florenza_credit"),
+                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", callback_data="creatorpavan"),
+                    InlineKeyboardButton(text="Credit", callback_data="creatorpavan"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="innexia_back"),
@@ -448,12 +448,12 @@ def innexia_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Lᴏɢ'ꜱ", url="t.me/Florenza_Logs"),
-                    InlineKeyboardButton(text="Fᴇᴅ", url="t.me/FlorenzaFedChat"),
+                    InlineKeyboardButton(text="Lᴏɢ'ꜱ", url="t.me/creatorpavan"),
+                    InlineKeyboardButton(text="Fᴇᴅ", url="t.me/creatorpavansyt"),
                  ],
                  [
-                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="t.me/Florenza_support"),
-                    InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇꜱ", url="https://t.me/florenza_updates"),
+                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="t.me/creatorpavansyt"),
+                    InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇꜱ", url="https://t.me/creatorpavan"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="innexia_basichelp"),
@@ -462,20 +462,20 @@ def innexia_about_callback(update, context):
                 ]
             ),
         )
-    elif query.data == "florenza_credit":
+    elif query.data == "Panuu_credit":
         query.message.edit_text(
-            text=f"<b> CREDIT FOR FLORENZA DEV'S</b>\n"
-            f"\nHere Some Developers Helping in Making The Florenza Bot",
+            text=f"<b> CREDIT FOR PANUU DEV'S</b>\n"
+            f"\nHere Some Developers Helping in Making The PANUU Bot",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="ROCKSTAR", url="t.me/T5F_R0CK5T4R"),
-                    InlineKeyboardButton(text="RAPSTAR", url="t.me/owner_of_tsf_rapstar"),
+                    InlineKeyboardButton(text="STAXEN", url="t.me/staxen_x"),
+                    InlineKeyboardButton(text="BABY", url="t.me/Arpit_Chaurasiya"),
                  ],
                  [
-                    InlineKeyboardButton(text="ANGAD", url="t.me/Cad_baly"),
-                    InlineKeyboardButton(text="KING", url="https://t.me/ITZ_RAISTAR"),
+                    InlineKeyboardButton(text="JAAN", url="t.me/Arpit_Chaurasiya"),
+                    InlineKeyboardButton(text="OWN", url="https://t.me/staxen_x"),
                  ],
                  [
                     InlineKeyboardButton(text="Back", callback_data="innexia_basichelp"),
@@ -491,8 +491,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..😻 I'm *Florenza*
-                 \nHere is the [🔥Source Code🔥](https://github.com/T5fr0ck5t4r/flozenzabot) .""",
+            text=""" Hi..😻 I'm *Panuu*
+                 \nHere is the [🔥Source Code🔥](https://telegra.ph/STAXEN-REPO-09-14) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
